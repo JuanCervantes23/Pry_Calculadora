@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora CFE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/txtLecturaAnterior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lectura Anterior"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/txtLecturaActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lectura Actual"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/txtCostoKw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Costo del KW"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcularKw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular KW"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/txtTotalKw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salida: KW"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnCalcularRecibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Recibo"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/txtPagoRecibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salida: El pago del recibo"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnPasarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pasar Datos"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

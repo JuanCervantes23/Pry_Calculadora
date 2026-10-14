@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Pry_Calculadora"
 include(":app")
+include(":app")

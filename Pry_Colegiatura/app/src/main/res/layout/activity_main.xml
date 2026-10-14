@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constrainedWidth="false"
+    tools:context=".View.MainActivity">
+
+    <EditText
+        android:id="@+id/txtMatricula"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Matrícula"
+        android:inputType="text"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtMatricula"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtMatricula"
+        app:layout_constraintTop_toBottomOf="@+id/txtMatricula" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="152dp"
+        android:text="Pago Colegiatura"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPromedio1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Promedio 1"
+        android:inputType="numberDecimal"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtPromedio2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Promedio 2"
+        android:inputType="numberDecimal"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtPromedio1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPromedio1"
+        app:layout_constraintTop_toBottomOf="@+id/txtPromedio1" />
+
+    <EditText
+        android:id="@+id/txtPromedio3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Promedio 3"
+        android:inputType="numberDecimal"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtPromedio2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPromedio2"
+        app:layout_constraintTop_toBottomOf="@+id/txtPromedio2" />
+
+    <EditText
+        android:id="@+id/txtCosto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Costo Colegiatura"
+        android:inputType="numberDecimal"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtPromedio3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPromedio3"
+        app:layout_constraintTop_toBottomOf="@+id/txtPromedio3" />
+
+    <Button
+        android:id="@+id/btnPromedio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Promedio"
+        android:textSize="24sp"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtCosto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtCosto"
+        app:layout_constraintTop_toBottomOf="@+id/txtCosto" />
+
+    <Button
+        android:id="@+id/btnEstatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Estatus"
+        android:textSize="20sp"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnPromedio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnPromedio"
+        app:layout_constraintTop_toBottomOf="@+id/btnPromedio" />
+
+    <Button
+        android:id="@+id/btnColegiatura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Colegiatura"
+        android:textSize="20sp"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnEstatus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnEstatus"
+        app:layout_constraintTop_toBottomOf="@+id/btnEstatus" />
+
+    <TextView
+        android:id="@+id/txtResAlumno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Nombre:"
+        android:textSize="24sp"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnColegiatura"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnColegiatura"
+        app:layout_constraintTop_toBottomOf="@+id/btnColegiatura" />
+
+    <TextView
+        android:id="@+id/txtResActual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Colegiatura Actual:"
+        android:textSize="24sp"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtResAlumno"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtResAlumno"
+        app:layout_constraintTop_toBottomOf="@+id/txtResAlumno" />
+
+    <TextView
+        android:id="@+id/txtResPromedio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Promedio Global:"
+        android:textSize="24sp"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtResActual"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtResActual"
+        app:layout_constraintTop_toBottomOf="@+id/txtResActual" />
+
+    <TextView
+        android:id="@+id/txtResFinal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Colegiatura Final:"
+        android:textSize="24sp"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtResPromedio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtResPromedio"
+        app:layout_constraintTop_toBottomOf="@+id/txtResPromedio" />
+</androidx.constraintlayout.widget.ConstraintLayout>
